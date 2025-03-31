@@ -115,10 +115,10 @@ class Solution {
         ListNode q = pre.next;
         ListNode cur = q;
         for (int i = 0; i < right - left + 1; ++i) {
-            ListNode t = cur.next;
+            ListNode f = cur.next;
             cur.next = pre;
             pre = cur;
-            cur = t;
+            cur = f;
         }
         p.next = pre;
         q.next = cur;
